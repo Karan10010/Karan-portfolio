@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karan Kumar - Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="container nav">
+      <img src="assets/SmallSquareLogoJpg.jpg" class="logo" alt="Logo">
+      <nav>
+  <a href="#hero">Home</a>
+
+  <a href="#projects">Projects</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="assets/KARAN KUMAR CV.pdf" download class="btn">Download CV</a>
+</nav>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero slide-up" id="hero">
+  <div class="hero-container">
+    <!-- Left Side -->
+    <div class="hero-left">
+      <h1>Hi, I'm <span>Karan Kumar</span></h1>
+      <h3><span class="typed-text"></span><span class="cursor">|</span></h3>
+      <p>
+        I create modern, fast, and user-friendly websites using HTML, CSS, JavaScript, and React.
+        I'm passionate about building intuitive interfaces and bringing ideas to life through code.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="assets/KARAN KUMAR CV.pdf" class="btn yellow" download>Download CV</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+
+      <div class="tech-icons">
+        <i class="fab fa-html5" title="HTML5"></i>
+        <i class="fab fa-css3-alt" title="CSS3"></i>
+        <i class="fab fa-js" title="JavaScript"></i>
+        <i class="fab fa-react" title="React"></i>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="hero-right">
+      <img src="assets/Karan profile.jpg" alt="Karan Profile" class="hero-profile-img" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Projects -->
+  <section class="projects reveal" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/Microsoft-To-Do-new-version.png" alt="Project 1">
+        <h3>To-do App With Backend Integration </h3>
+        <p>A to-do app with backend integration typically involves a frontend user interface for task management and a backend API to handle data storage and operations.</p>
+        
+        <a href="https://github.com/Karan10010/Todo-App-With-Backend-Integration" target="_blank" class="github-link">GitHub link</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="about reveal" id="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+    
+    <!-- Left Side: Enlarged Profile Image -->
+    <div class="about-img">
+      <img src="assets/m4.jpg" alt="Profile" />
+    </div>
+
+    <!-- Right Side: Text + Cards -->
+    <div class="about-text">
+      <p>
+        I’m a passionate Frontend Developer focused on crafting clean and user-friendly experiences. 
+        I love turning ideas into interactive web applications using HTML, CSS, JavaScript, and React.
+        I'm also exploring backend technologies to become a full-stack developer.
+      </p>
+
+      <!-- Skills Card -->
+      <!-- Combined Info Card with Tabs -->
+<div class="info-card">
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="showTab('skills')">Skills</button>
+    <button class="tab-btn" onclick="showTab('education')">Education & Qualification</button>
+  </div>
+
+  <div class="tab-content active" id="skills">
+    <ul class="info-list">
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Search Engine Optimization (SEO)</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </div>
+
+  <div class="tab-content" id="education">
+    <ul class="info-list">
+      <li>BS Software Engineering – SMI University Karachi</li>
+      <li>CPISM (Frontend Development) – Aptech SFC Karachi</li>
+      <li>Frontend Development – Self-Learning & Projects</li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+
+  <!-- Contact -->
+  <section class="contact reveal" id="contact">
+  <h2>Contact Me</h2>
+
+  <!-- Animated Contact Image -->
+  <div class="contact-img-wrapper">
+    <img src="assets/undraw_contact-us_kcoa.svg" alt="Contact Illustration" />
+  </div>
+
+  <!-- Contact Form -->
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+    <p id="msgStatus"></p>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+  <p>© 2025 Karan Kumar | All Rights Reserved</p>
+  <div class="social-icons">
+    <!-- Gmail (mailto link) -->
+    <a href="mailto:kumarkaran2532005@gmail.com" title="Email">
+      <img src="assets/gmail icon.png" alt="Gmail" class="icon-img" />
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/Karan10010" target="_blank" title="GitHub">
+      <img src="assets/github icon.png" alt="GitHub" class="icon-img" />
+    </a>
+
+    <!-- LinkedIn (with proper https:// added) -->
+    <a href="https://www.linkedin.com/in/karan-kumar-7279522b" target="_blank" title="LinkedIn">
+      <img src="assets/linkedin icon.png" alt="LinkedIn" class="icon-img" />
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/karankhatri_045" target="_blank" title="Instagram">
+      <img src="assets/instagram icon.png" alt="Instagram" class="icon-img" />
+    </a>
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
